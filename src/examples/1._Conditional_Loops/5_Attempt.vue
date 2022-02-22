@@ -16,7 +16,7 @@ export default {
         <button @click="numbers.pop()">Pop Number</button>
         <button @click="numbers.reverse()">Reverse Number</button>
         <ul v-if="show">
-            <li v-for="number in numbers">
+            <li v-for="number in numbers" :key="number">
                 {{number}}
             </li>
         </ul>

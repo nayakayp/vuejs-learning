@@ -1,7 +1,7 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
-import Example from './examples/1._Conditional_Loops/5_Attempt.vue'
+import Example from './examples/2.Form Binding/3rd Attempt.vue'
 </script>
 
 <template>
@@ -23,6 +23,7 @@ import Example from './examples/1._Conditional_Loops/5_Attempt.vue'
 
 <style>
 @import './assets/base.css';
+@import './assets/tailwind-output.css';
 
 #app {
   max-width: 1280px;
