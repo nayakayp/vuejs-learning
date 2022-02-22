@@ -2,15 +2,15 @@
 export default {
     data(){
         return{
-            show:false,
-            numbers:[1,2,3,4,5]
+            show:true,
+            numbers:[1,2,3,4]
         }
     }
 }
 </script>
 
 <template>
-    <div class="root">
+    <div class="">
         <button @click="show=!show">Toggle List</button>
         <button @click="numbers.push(numbers.length + 1)">Push List</button>
         <button @click="numbers.pop()">Pop List</button>
@@ -20,6 +20,8 @@ export default {
                 {{number}}
             </li>
         </ul>
-        <p v-else-if="!show">List disembunyikan. Klik Toggle List</p>
+        <p v-else>
+            Click Toggle to reveal list
+        </p>
     </div>
 </template>
